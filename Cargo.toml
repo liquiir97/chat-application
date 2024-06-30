@@ -1,0 +1,19 @@
+[package]
+name = "chat-application"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = {version = "0.7", features = ["ws"]}
+axum-extra = { version = "0.9", features = ["typed-header"] }
+anyhow = "1.0.82"
+chrono = {version = "0.4.38", features = ["serde"] }
+regex = "1.10.4"
+tokio = { version = "1", features = ["full"] }
+serde_json = "1"
+serde = { version = "1.0.197", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+futures = "0.3"
